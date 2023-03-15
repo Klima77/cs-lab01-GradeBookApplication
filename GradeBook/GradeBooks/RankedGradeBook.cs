@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace GradeBook.GradeBooks
@@ -10,5 +11,41 @@ namespace GradeBook.GradeBooks
         {
             Type = Enums.GradeBookType.Ranked;
         }
+
+    public override char GetLetterGrade(double averageGrade)
+    {
+        int numberOfStudents = Students.Count;
+
+        if (numberOfStudents < 5)
+        {
+            throw new InvalidOperationException();
+        }
+
+        int topTwentyPercent = (int)Math.Ceiling(numberOfStudents * 0.2);
+
+        List<double> grades = Students.OrderByDescending(s => s.AverageGrade).Select(s => s.AverageGrade).ToList();
+
+        if (averageGrade >= grades[topTwentyPercent - 1])
+        {
+            return 'A';
+        }
+        else if (averageGrade >= grades[(topTwentyPercent * 2) - 1])
+        {
+            return 'B';
+        }
+        else if (averageGrade >= grades[(topTwentyPercent * 3) - 1])
+        {
+            return 'C';
+        }
+        else if (averageGrade >= grades[(topTwentyPercent * 4) - 1])
+        {
+            return 'D';
+        }
+        else
+        {
+            return 'F';
+        }
+    }
+
     }
 }
