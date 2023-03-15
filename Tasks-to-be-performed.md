@@ -57,7 +57,7 @@ If you would rather use something other than Visual Studio
 
 __Note:__ This isn't the only way to accomplish implementation, however; this is what the project's tests are expecting. Implementing the features in a different way will likely result in being marked as incomplete / incorrect.
 
-- [ ] Add support for Ranked Grading
+- [ ] Add support for Ranked Grading		zrobione
 	- [ ] Creating The `GradeBookType` Enum.
 		- [ ] Create a new Enum `GradeBookType`.
 			- This should be located in the `Enums` directory.
@@ -71,7 +71,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- This should be of type `GradeBookType`.
 			- This should use the `public` access modifier.
 
-	- [ ] Creating the `StandardGradeBook` class
+	- [ ] Creating the `StandardGradeBook` class		zrobione
 		- [ ] Create a class `StandardGradeBook` _(Once this change is made the code will not compile until completion of the next task)_
 			- This should be located in the `GradeBooks` directory.
 			- This should use the `GradeBook.GradeBooks` namespace.
