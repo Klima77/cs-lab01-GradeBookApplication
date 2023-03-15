@@ -65,7 +65,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- This should use the `public` access modifier.
 			- This should contain the values `Standard`, `Ranked`, `ESNU`, `OneToFour`, and `SixPoint`.
 
-	- [ ] Add `Type` property
+	- [ ] Add `Type` property			zrobione
 		- [ ] Add a new property `Type` to `BaseGradeBook`
 			- This should use the name `Type`.
 			- This should be of type `GradeBookType`.
