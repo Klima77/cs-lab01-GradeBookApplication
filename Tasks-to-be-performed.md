@@ -130,7 +130,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 	zrobione
 		- [ ] Add the `abstract` keyword to the `BaseGradeBook` declaration.
 
-- [ ] Add support for weighted GPAs
+- [ ] Add support for weighted GPAs zrobione
 	- [ ] Add `IsWeighted` property to `BaseGradeBook`
 		- [ ] Create a new `bool` property named `IsWeighted` in `BaseGradeBook`
 			- This should use the public access modifier.
